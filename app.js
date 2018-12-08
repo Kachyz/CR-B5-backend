@@ -6,9 +6,6 @@ const librosImportados = require('./routes/libros')
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost/libreria')
 
-// const http = require('http')
-// const server = http.createServer(app)
-
 app.use(cors())
 
 mongoose.connection.once('open', () => {
